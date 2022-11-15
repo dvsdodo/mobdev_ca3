@@ -13,6 +13,22 @@ const routes: Routes = [
   {
     path: 'character_detail',
     loadChildren: () => import('./pages/character_details/character_details.module').then(m=> m.CharacterDetailsPageModule)
+  },
+  {
+    path: 'episodes',
+    loadChildren: () => import('./pages/episodes/episodes.module').then( m => m.EpisodesPageModule)
+  },
+  {
+    path: 'episode_details',
+    loadChildren: () => import('./pages/episode_details/episode_details.module').then( m => m.EpisodeDetailsPageModule)
+  },
+  {
+    path: 'quotes',
+    loadChildren: () => import('./pages/quotes/quotes.module').then( m => m.QuotesPageModule)
+  },
+  {
+    path: 'deaths',
+    loadChildren: () => import('./pages/deaths/deaths.module').then( m => m.DeathsPageModule)
   }
 ];
 @NgModule({
