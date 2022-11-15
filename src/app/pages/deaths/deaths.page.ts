@@ -14,7 +14,7 @@ export class DeathsPage implements OnInit {
   constructor(private router: Router, private api: ApiService) {}
 
   ngOnInit() {
-    this.deaths = this.api.getDeaths();
+    this.deaths = this.api.getDeathCounts();
     // this.deaths.forEach((item) => {
     //   console.log('Whole Deaths data: ', item);
     // });
