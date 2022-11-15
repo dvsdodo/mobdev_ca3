@@ -29,7 +29,7 @@ export class ApiService {
         return this.http.get(`${this.baseUrl}quotes`);
     }
 
-    getDeathCounts() {
-        return this.http.get(`${this.baseUrl}DeathCounts`);
+    getDeath() {
+        return this.http.get(`${this.baseUrl}Death`);
     }
 }
