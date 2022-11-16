@@ -6,8 +6,8 @@
 <ion-content>
   <ion-list>
       <ion-item *ngFor="let death of (deaths | async)">
-        <center>- {{ death.death }} was killed by {{ death.responsible }} with {{death.cause}}</center>
-       <ion-list><h6><center><b> Death Count:</b></center></h6><center><b>{{ death.number_of_deaths }}</b></center></ion-list>
+        - {{ death.death }} was killed by {{ death.responsible }} with {{death.cause}}
+       <ion-list><h6><b> Death Count:</b></h6><b>{{ death.number_of_deaths }}</b></ion-list>
       </ion-item>
     </ion-list>
 </ion-content>

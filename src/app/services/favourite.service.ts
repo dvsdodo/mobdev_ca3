@@ -20,15 +20,11 @@ export class FavouriteService {
   }
 
   isFavouriteCharacter(characterID) {
-    return this.getAllFavouriteCharacters().then((result) => {
-      return result && result.indexOf(characterID) !== -1;
-    });
+    return this.getAllFavouriteCharacters().then((result) => result && result.indexOf(characterID) !== -1);
   }
 
   isFavouriteEpisodes(episodeID) {
-    return this.getAllFavouriteCharacters().then((result) => {
-      return result && result.indexOf(episodeID) !== -1;
-    });
+    return this.getAllFavouriteCharacters().then((result) => result && result.indexOf(episodeID) !== -1);
   }
 
   favouriteCharacter(characterID) {
@@ -45,7 +41,7 @@ export class FavouriteService {
   unfavouriteCharacter(characterID) {
     return this.getAllFavouriteCharacters().then((result) => {
       if (result) {
-        var index = result.indexOf(characterID);
+        const index = result.indexOf(characterID);
         result.splice(index, 1);
         return this.storage.set(STORAGE_KEY_CHARACTERS, result);
       }
@@ -66,7 +62,7 @@ export class FavouriteService {
   unfavouriteEpisode(episodeID) {
     return this.getAllFavouriteCharacters().then((result) => {
       if (result) {
-        var index = result.indexOf(episodeID);
+        const index = result.indexOf(episodeID);
         result.splice(index, 1);
         return this.storage.set(STORAGE_KEY_CHARACTERS, result);
       }

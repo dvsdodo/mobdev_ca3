@@ -7,7 +7,8 @@ import {HttpClient } from '@angular/common/http';
 export class ApiService {
     constructor(private http: HttpClient) {}
 
-    baseUrl: string = 'https://www.breakingbadapi.com/api/';
+    // eslint-disable-next-line @typescript-eslint/member-ordering
+    baseUrl = 'https://www.breakingbadapi.com/api/';
 
     getCharacters() {
         return this.http.get(`${this.baseUrl}characters`);

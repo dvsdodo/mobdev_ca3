@@ -12,7 +12,7 @@ import { FavouriteService } from '../../services/favourite.service';
 export class CharacterDetailsPage implements OnInit {
   character: any;
   characterID = null;
-  isFavourite: boolean = false;
+  isFavourite = false;
 
   constructor(
     private activatedRoute: ActivatedRoute,
