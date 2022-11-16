@@ -33,17 +33,17 @@
     </ion-item>
     
     <ion-item class="episode-info" lines="none">
-      <ion-icon name="film" slot="start"></ion-icon>
+      <ion-icon name="film-outline" slot="start"></ion-icon>
       Season: {{ episode?.season }}
     </ion-item>
     
     <ion-item class="episode-info" lines="none">
-      <ion-icon name="play-circle-outline" slot="start"></ion-icon>
+      <ion-icon name="play-outline" slot="start"></ion-icon>
       Episode Number: {{ episode?.season }}
     </ion-item>
 
     <ion-item class="episode-info" lines="none" *ngFor="let char of episode?.characters; let i = index">
-      <ion-icon name="person" slot="start"></ion-icon>
+      <ion-icon name="person-circle-outline" slot="start"></ion-icon>
       Characters: {{ char }}
     </ion-item>
 
